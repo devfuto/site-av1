@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MMREIS - Página Inicial</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imagens/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <header id="cabecalho">
+    <nav id="nav">
+      <img class="logo" src="imagens/logo.jpg" alt="logo">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="servico.html">Orçamento</a>
+    </nav>
+  </header>
+
+  <div class="conteudo-container2">
+    <section class="inicio2">
+      <h1>Solicite um Orçamento</h1>
+      <h2>Complete o formulário para entrar em contato conosco</h2>
+    </section>
+    <section class="orcamento">
+      <form action="final.html" id="form-orcamento">
+        <!-- Campos do formulário (5+ conforme AV) -->
+        <div class="form-group" class="">
+          <label for="nome">Nome Completo*</label>
+          <input type="text" id="nome" name="nome" required minlength="3">
+        </div>
+
+        <div class="form-group">
+          <label for="empresa">Empresa</label>
+          <input type="text" id="empresa" name="empresa">
+        </div>
+
+        <div class="form-group">
+          <label for="servico">Serviço Desejado*</label>
+          <select id="servico" name="servico" required>
+            <option value="">Selecione...</option>
+            <option value="consultoria">Consultoria em QSMS</option>
+            <option value="treinamento">Treinamentos</option>
+            <option value="auditoria">Auditoria Ambiental</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone*</label>
+          <input type="tel" id="telefone" name="telefone" required pattern="[0-9]{11}" placeholder="(00) 00000-0000">
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">Detalhes do Serviço*</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required minlength="10"></textarea>
+        </div>
+        <button type="submit" class="btn-enviar">Enviar Solicitação</button>
+      </form>
+    </section>
+  </div>
+  <footer class="footer">
+    <p><strong>Todos os direitos reservados.</strong></p>
+    <p>
+      <button onclick="modoClaro2()" id="botao1">Tema Claro</button>
+      <button onclick="modoEscuro2()" id="botao2">Tema Escuro</button>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

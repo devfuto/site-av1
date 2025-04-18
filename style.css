@@ -1,0 +1,274 @@
+/* Base da Index.html e formatação dos outros sites */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(imagens/pinheiros-lindos-nas-montanhas-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.logo {
+  height: 60px;
+}
+
+#cabecalho {
+  height: 60px;
+  background-color: #366735;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1e1412;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #2e8b57;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.conteudo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "inicio inicio "
+    "texto  imagem"
+    "imagem2 imagem2"
+    "texto2 texto2";
+  max-width: 60%;
+  min-height: 100%;
+  background: #492e1b;
+  color: white;
+  padding: 20px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .conteudo-container {
+    grid-template-areas:
+      "inicio"
+      "texto"
+      "imagem"
+      "texto2";
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .imagem2 {
+    display: none;
+  }
+}
+.inicio {
+  padding-top: 30px;
+  text-align: center;
+  grid-area: inicio;
+}
+
+.texto {
+  grid-area: texto;
+  font-size: 20px;
+  word-break: break-word;
+  white-space: normal;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+
+.imagem {
+  grid-area: imagem;
+  justify-self: center;
+}
+
+.imagem img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.imagem2 {
+  grid-area: imagem2;
+}
+
+.imagem2 img {
+  justify-self: center;
+  width: 40%;
+  height: auto;
+  max-width: 40%;
+  display: block;
+}
+
+.conteudofinal {
+  grid-area: texto2;
+  justify-self: center;
+}
+
+h1 {
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+  font-size: 50px;
+}
+
+footer {
+  background-color: black;
+  height: 40px;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+/* Estilos do formulário */
+.orcamento {
+  color: black;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-enviar {
+  background-color: #492e1b;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btn-enviar:hover {
+  background-color: #1a252f;
+}
+
+.conteudo-container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 60%;
+  min-width: 470px;
+  min-height: 100%;
+  background: #492e1b;
+  color: #fff;
+  padding: 0px 40px 20px 40px;
+  margin: 0 auto;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.inicio2 {
+  text-align: center;
+}
+
+#botao1,
+#botao2 {
+  background-color: #492e1b;
+  padding: 0px 5px 0px 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+#botao1:hover {
+  background-color: #1a252f;
+}
+
+#botao2:hover {
+  background-color: #1a252f;
+}
+
+/* Pagina sobre */
+
+.conteudo-container3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "inicio inicio "
+    "imagem  texto"
+    "texto2 texto2"
+    "texto3 texto3";
+  max-width: 60%;
+  min-height: 100%;
+  background: #492e1b;
+  color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.objetivos {
+  grid-area: texto2;
+  justify-self: center;
+  font-size: 20px;
+}
+
+.infos {
+  grid-area: texto3;
+  justify-self: center;
+  font-size: 20px;
+}
+
+.objetivos p {
+  margin: 20px 0px 20px 0px;
+}
+
+.infos p {
+  margin: 20px 0px 20px 0px;
+}
+
+.foto {
+  height: auto;
+  max-width: 100%;
+  border: 5px solid #edbb99;
+}
+
+@media (max-width: 900px) {
+  .conteudo-container3 {
+    grid-template-areas:
+      "inicio"
+      "texto"
+      "imagem"
+      "texto2";
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
