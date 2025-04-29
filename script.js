@@ -3,6 +3,7 @@ function modoClaro() {
   const container = document.querySelector(".conteudo-container");
   const cabecalho = document.querySelector("#cabecalho");
   const imagem = document.querySelector(".logo");
+  
   if (container && cabecalho && imagem) {
     container.style.background = "#C19A6B";
     cabecalho.style.background = "#94d182";
@@ -15,6 +16,7 @@ function modoEscuro() {
   const container = document.querySelector(".conteudo-container");
   const cabecalho = document.querySelector("#cabecalho");
   const imagem = document.querySelector(".logo");
+  
   if (container && cabecalho && imagem) {
     container.style.background = "#492e1b";
     cabecalho.style.background = "#366735";
@@ -28,6 +30,7 @@ function modoClaro2() {
   const container = document.querySelector(".conteudo-container2");
   const cabecalho = document.querySelector("#cabecalho");
   const imagem = document.querySelector(".logo");
+  
   if (container && cabecalho && imagem) {
     container.style.background = "#C19A6B";
     cabecalho.style.background = "#94d182";
@@ -40,6 +43,7 @@ function modoEscuro2() {
   const container = document.querySelector(".conteudo-container2");
   const cabecalho = document.querySelector("#cabecalho");
   const imagem = document.querySelector(".logo");
+  
   if (container && cabecalho && imagem) {
     container.style.background = "#492e1b";
     cabecalho.style.background = "#366735";
@@ -54,11 +58,21 @@ function modoClaro3() {
   const container = document.querySelector(".conteudo-container3");
   const cabecalho = document.querySelector("#cabecalho");
   const imagem = document.querySelector(".logo");
+  
   if (container && cabecalho && imagem) {
     container.style.background = "#C19A6B";
     cabecalho.style.background = "#94d182";
     container.style.color = "#000";
     imagem.src = "imagens/logo2.jpg";
+  }
+  const infos = document.querySelector(".infos");
+  const objetivos = document.querySelector(".objetivos");
+  const foto = document.querySelector(".foto");
+
+  if (infos && objetivos && imagem) {
+    infos.style.border = "5px solid #492e1b";
+    objetivos.style.border = "5px solid #492e1b";
+    foto.style.border = "5px solid #492e1b";
   }
 }
 
@@ -66,10 +80,20 @@ function modoEscuro3() {
   const container = document.querySelector(".conteudo-container3");
   const cabecalho = document.querySelector("#cabecalho");
   const imagem = document.querySelector(".logo");
+  
   if (container && cabecalho && imagem) {
     container.style.background = "#492e1b";
     cabecalho.style.background = "#366735";
     container.style.color = "#FFF";
     imagem.src = "imagens/logo.jpg";
+  }
+  const infos = document.querySelector(".infos");
+  const objetivos = document.querySelector(".objetivos");
+  const foto = document.querySelector(".foto");
+
+  if (infos && objetivos && imagem) {
+    infos.style.border = "5px solid #edbb99";
+    objetivos.style.border = "5px solid #edbb99";
+    foto.style.border = "5px solid #edbb99";
   }
 }
