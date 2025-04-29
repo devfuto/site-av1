@@ -261,14 +261,3 @@ footer {
   border: 5px solid #edbb99;
 }
 
-@media (max-width: 900px) {
-  .conteudo-container3 {
-    grid-template-areas:
-      "inicio"
-      "texto"
-      "imagem"
-      "texto2";
-    grid-template-columns: 1fr;
-    align-items: center;
-  }
-}
